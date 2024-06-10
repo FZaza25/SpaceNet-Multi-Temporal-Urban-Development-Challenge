@@ -1,2 +1,2 @@
-# SpaceNet-Multi-Temporal-Urban-Development-Challenge
+# SpaceNet-Multi-Temporal-Urban-Development-Challenge by FedericoZaza
 In this project, I tackle the following challenge: https://spacenet.ai/sn7-challenge/ by analyzing the dataset and developing a binary convolutional neural network for building detection.
