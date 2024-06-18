@@ -1,68 +1,42 @@
 import geopandas as gpd
-import rasterio
-import numpy as np
-from rasterio.features import rasterize
 import matplotlib.pyplot as plt
+import numpy as np
 
-# Carica il file GeoJSON contenente le etichette (poligoni) che rappresentano gli edifici
-labels_path = 'labels_match_global_monthly_2017_07_mosaic_L15-1615E-1205N_6460_3370_13_Buildings.geojson'
-labels = gpd.read_file(labels_path)
+# Percorsi ai file GeoJSON
+labels_paths = [
+    'labels_global_monthly_2017_07_mosaic_L15-1615E-1205N_6460_3370_13_Buildings.geojson',
+    'labels_match_global_monthly_2017_07_mosaic_L15-1615E-1205N_6460_3370_13_Buildings.geojson',
+    'labels_match_px_global_monthly_2017_07_mosaic_L15-1615E-1205N_6460_3370_13_Buildings.geojson'
+]
 
-# Carica l'immagine satellitare in formato TIFF
-tif_image_path = 'global_monthly_2017_07_mosaic_L15-1615E-1205N_6460_3370_13.tif'
-with rasterio.open(tif_image_path) as src:
-    # Legge i primi tre canali dell'immagine (ignorando il quarto canale se presente)
-    img = src.read([1, 2, 3])
-    # Ottiene la trasformazione affine dell'immagine, che mappa le coordinate pixel alle coordinate spaziali
-    transform = src.transform
-    # Salva le dimensioni dell'immagine (altezza e larghezza)
-    img_shape = (src.height, src.width)
-    # Salva il sistema di riferimento delle coordinate (CRS) dell'immagine
-    img_crs = src.crs
-
-# Stampa i bounds (limiti spaziali) delle geometrie e dell'immagine per verificare che le coordinate siano allineate
-print(f'Bounds delle geometrie: {labels.total_bounds}')
-print(f'Bounds dell\'immagine: {src.bounds}')
-print(f'CRS dell\'immagine: {img_crs}')
-
-# Converte le geometrie dal loro CRS originale al CRS dell'immagine satellitare
-labels = labels.to_crs(img_crs)
-
-# Definisce una funzione per creare una maschera binaria
-def create_mask(geojson, img_shape, transform):
-    # Prepara le geometrie e i valori di riempimento per la rasterizzazione
-    shapes = [(geom, 1) for geom in geojson.geometry]
-    # Rasterizza le geometrie vettoriali in una griglia raster, riempiendo con 1 dove le geometrie sono presenti e 0 altrove
-    mask = rasterize(shapes=shapes, out_shape=img_shape, transform=transform, fill=0, dtype=np.uint8)
-    return mask
-
-# Crea la maschera binaria chiamando la funzione create_mask
-mask = create_mask(labels, img_shape, transform)
-
-# Normalizza i valori della maschera per visualizzarli correttamente
-mask_normalized = (mask * 255).astype(np.uint8)
-
-# Salva la maschera binaria creata in un nuovo file TIFF
-output_mask_path = 'output_mask.tif'
-with rasterio.open(
-    output_mask_path,
-    'w',
-    driver='GTiff',
-    height=mask_normalized.shape[0],
-    width=mask_normalized.shape[1],
-    count=1,
-    dtype=mask_normalized.dtype,
-    crs=img_crs,
-    transform=transform,
-) as dst:
-    # Scrive la maschera binaria nel file
-    dst.write(mask_normalized, 1)
-
-# Verifica il contenuto del file salvato
-with rasterio.open(output_mask_path) as src:
-    saved_mask = src.read(1)
-    plt.figure(figsize=(10, 10))
-    plt.imshow(saved_mask, cmap='gray')
-    plt.title('Saved Binary Mask')
+# Funzione per caricare e visualizzare i file GeoJSON
+def load_and_plot_labels(paths):
+    fig, axs = plt.subplots(1, len(paths), figsize=(15, 5))
+    for i, path in enumerate(paths):
+        try:
+            labels = gpd.read_file(path)
+            if labels.is_empty.any() or not np.isfinite(labels.total_bounds).all():
+                print(f'File {path} contiene dati non validi.')
+                continue
+            # Stampa informazioni per il debug
+            print(f'File {path} bounds: {labels.total_bounds}')
+            print(f'File {path} CRS: {labels.crs}')
+            # Converti al CRS comune EPSG:4326
+            if labels.crs != 'EPSG:4326':
+                labels = labels.to_crs('EPSG:4326')
+            # Verifica che le coordinate siano finite e positive
+            bounds = labels.geometry.bounds
+            if bounds.isnull().values.any() or (bounds.min().min() < -1e10) or (bounds.max().max() > 1e10):
+                print(f'File {path} contiene coordinate non finite.')
+                continue
+            # Visualizza le etichette
+            labels.plot(ax=axs[i], color='blue', edgecolor='black')
+            axs[i].set_title(f'Labels {i+1}')
+            axs[i].set_aspect('auto')  # Imposta l'aspetto manualmente
+        except Exception as e:
+            print(f'Errore durante il caricamento del file {path}: {e}')
+    plt.tight_layout()
     plt.show()
+
+load_and_plot_labels(labels_paths)
 
