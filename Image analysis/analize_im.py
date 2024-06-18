@@ -16,9 +16,9 @@ for i in range(dataset.shape[0]):
     band_mean = band.mean()
     band_std = band.std()
     
-    axes[i - 1].imshow(band, cmap='gray')
-    axes[i - 1].set_title(f'Banda {i}\nMin: {band_min}\nMax: {band_max}\nMean: {band_mean:.2f}')
-    axes[i - 1].axis('off')
+    axes[i].imshow(band, cmap='gray')
+    axes[i].set_title(f'Banda {i}\nMin: {band_min}\nMax: {band_max}\nMean: {band_mean:.2f}')
+    axes[i].axis('off')
 
 
 plt.show()
