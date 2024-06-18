@@ -1,12 +1,16 @@
 import matplotlib.pyplot as plt
 import rasterio
 
-file_path = 'sample.tif'
-dataset = rasterio.open(file_path)
+file_path = 'sample5.tif'
+with rasterio.open(file_path) as source:
+   dataset=source.read()
+   
+print(dataset.shape)
+print(dataset.dtype)
 
 fig, axes = plt.subplots(1, 4, figsize=(20, 5))
-for i in range(1, dataset.count + 1):
-    band = dataset.read(i)
+for i in range(dataset.shape[0]):
+    band = dataset[i]
     band_min = band.min()
     band_max = band.max()
     band_mean = band.mean()
