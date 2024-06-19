@@ -5,11 +5,11 @@ from rasterio.features import rasterize
 import matplotlib.pyplot as plt
 
 # Carica il file GeoJSON contenente le etichette (poligoni) che rappresentano gli edifici
-labels_path = 'labels_match_global_monthly_2017_07_mosaic_L15-1615E-1205N_6460_3370_13_Buildings.geojson'
+labels_path = 'match_global_monthly_2018_02_mosaic_L15-0924E-1108N_3699_3757_13_Buildings.geojson'
 labels = gpd.read_file(labels_path)
 
 # Carica l'immagine satellitare in formato TIFF
-tif_image_path = 'global_monthly_2017_07_mosaic_L15-1615E-1205N_6460_3370_13.tif'
+tif_image_path = 'global_monthly_2018_02_mosaic_L15-0924E-1108N_3699_3757_13.tif'
 with rasterio.open(tif_image_path) as src:
     # Legge i primi tre canali dell'immagine (ignorando il quarto canale se presente)
     img = src.read([1, 2, 3])
