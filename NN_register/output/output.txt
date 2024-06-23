@@ -1,106 +1,560 @@
-Train Loss: 0.5694
-Train Loss: 0.3279
-Validation Loss: 0.2728
-Accuracy: 92.29
-Dice score: 0.0000
-Precision: 1.0000
-Recall: 0.0000
-F1 Score: 0.0000
+Train Loss: 0.9352
+Validation Loss: 0.9510
+Accuracy: 65.76
+Precision: 0.1721
+Recall: 0.8990
+F1 Score: 0.2888
 
-Train Loss: 0.4809
-Validation Loss: 0.4566
-Accuracy: 91.79
-Dice score: 0.0099
-Precision: 0.0699
-Recall: 0.0054
-F1 Score: 0.0099
+Train Loss: 0.8331
+Validation Loss: 1.2064
+Accuracy: 87.55
+Precision: 0.3209
+Recall: 0.5322
+F1 Score: 0.3974
 
-Train Loss: 0.4340
-Validation Loss: 0.4265
-Accuracy: 92.16
-Dice score: 0.0029
-Precision: 0.0727
-Recall: 0.0015
-F1 Score: 0.0029
+Train Loss: 0.8111
+Validation Loss: 0.8956
+Accuracy: 75.14
+Precision: 0.2148
+Recall: 0.8297
+F1 Score: 0.3407
 
-Train Loss: 0.4107
-Validation Loss: 0.4076
-Accuracy: 92.29
-Dice score: 0.0003
-Precision: 0.0954
-Recall: 0.0001
-F1 Score: 0.0003
+Train Loss: 0.7890
+Validation Loss: 0.9128
+Accuracy: 79.44
+Precision: 0.2405
+Recall: 0.7585
+F1 Score: 0.3640
 
-Train Loss: 0.3957
-Validation Loss: 0.3952
-Accuracy: 92.29
-Dice score: 0.0001
-Precision: 0.1034
-Recall: 0.0000
-F1 Score: 0.0001
+Train Loss: 0.7809
+Validation Loss: 0.9026
+Accuracy: 76.89
+Precision: 0.2242
+Recall: 0.7989
+F1 Score: 0.3493
 
-Train Loss: 0.3852
-Validation Loss: 0.3856
-Accuracy: 92.29
-Dice score: 0.0001
-Precision: 0.1760
-Recall: 0.0001
-F1 Score: 0.0001
+Train Loss: 0.7604
+Validation Loss: 0.8868
+Accuracy: 80.27
+Precision: 0.2514
+Recall: 0.7733
+F1 Score: 0.3784
 
-Train Loss: 0.3772
-Validation Loss: 0.3782
-Accuracy: 92.29
-Dice score: 0.0001
-Precision: 0.1473
-Recall: 0.0000
-F1 Score: 0.0001
+Train Loss: 0.7735
+Validation Loss: 0.9946
+Accuracy: 81.86
+Precision: 0.2601
+Recall: 0.7150
+F1 Score: 0.3797
 
-Train Loss: 0.3703
-Validation Loss: 0.3700
-Accuracy: 92.29
-Dice score: 0.0000
-Precision: 1.0000
-Recall: 0.0000
-F1 Score: 0.0000
+Train Loss: 0.7586
+Validation Loss: 0.8334
+Accuracy: 75.29
+Precision: 0.2215
+Recall: 0.8623
+F1 Score: 0.3517
 
-Train Loss: 0.3641
-Validation Loss: 0.3562
-Accuracy: 92.29
-Dice score: 0.0000
-Precision: 0.0673
-Recall: 0.0000
-F1 Score: 0.0000
+Train Loss: 0.7427
+Validation Loss: 1.0966
+Accuracy: 60.36
+Precision: 0.1465
+Recall: 0.8436
+F1 Score: 0.2490
 
-Train Loss: 0.3580
-Validation Loss: 0.3495
-Accuracy: 92.29
-Dice score: 0.0000
-Precision: 0.0673
-Recall: 0.0000
-F1 Score: 0.0000
+Train Loss: 0.7279
+Validation Loss: 0.9406
+Accuracy: 83.26
+Precision: 0.2753
+Recall: 0.7048
+F1 Score: 0.3948
 
-Train Loss: 0.3532
-Validation Loss: 0.3425
-Accuracy: 92.29
-Dice score: 0.0000
-Precision: 1.0000
-Recall: 0.0000
-F1 Score: 0.0000
+Train Loss: 0.7264
+Validation Loss: 1.0547
+Accuracy: 85.74
+Precision: 0.3050
+Recall: 0.6471
+F1 Score: 0.4124
 
-Train Loss: 0.3491
-Validation Loss: 0.3367
-Accuracy: 92.29
-Dice score: 0.0000
-Precision: 1.0000
-Recall: 0.0000
-F1 Score: 0.0000
+Train Loss: 0.7165
+Validation Loss: 0.9283
+Accuracy: 81.13
+Precision: 0.2596
+Recall: 0.7653
+F1 Score: 0.3864
 
-Train Loss: 0.3442
-Validation Loss: 0.3350
-Accuracy: 92.29
-Dice score: 0.0000
-Precision: 1.0000
-Recall: 0.0000
-F1 Score: 0.0000
+Train Loss: 0.7193
+Validation Loss: 1.0331
+Accuracy: 84.99
+Precision: 0.2988
+Recall: 0.6815
+F1 Score: 0.4134
 
-Train Loss: 0.3404
+Train Loss: 0.7267
+Validation Loss: 0.9834
+Accuracy: 82.57
+Precision: 0.2683
+Recall: 0.7164
+F1 Score: 0.3891
+
+Train Loss: 0.7203
+Validation Loss: 0.8714
+Accuracy: 79.04
+Precision: 0.2451
+Recall: 0.8086
+F1 Score: 0.3751
+
+Train Loss: 0.7123
+Validation Loss: 0.8765
+Accuracy: 71.05
+Precision: 0.1992
+Recall: 0.9040
+F1 Score: 0.3261
+
+Train Loss: 0.7100
+Validation Loss: 1.0903
+Accuracy: 89.59
+Precision: 0.3827
+Recall: 0.5447
+F1 Score: 0.4463
+
+Train Loss: 0.7114
+Validation Loss: 0.9150
+Accuracy: 82.99
+Precision: 0.2797
+Recall: 0.7429
+F1 Score: 0.4044
+
+Train Loss: 0.7083
+Validation Loss: 0.8947
+Accuracy: 75.88
+Precision: 0.2234
+Recall: 0.8505
+F1 Score: 0.3534
+
+Train Loss: 0.7107
+Validation Loss: 1.0286
+Accuracy: 86.66
+Precision: 0.3207
+Recall: 0.6394
+F1 Score: 0.4254
+
+Train Loss: 0.7082
+Validation Loss: 0.9183
+Accuracy: 84.33
+Precision: 0.2888
+Recall: 0.6976
+F1 Score: 0.4076
+
+Train Loss: 0.6921
+Validation Loss: 0.8675
+Accuracy: 67.06
+Precision: 0.1834
+Recall: 0.9421
+F1 Score: 0.3069
+
+Train Loss: 0.7082
+Validation Loss: 0.8455
+Accuracy: 72.89
+Precision: 0.2080
+Recall: 0.8837
+F1 Score: 0.3362
+
+Train Loss: 0.6973
+Validation Loss: 1.0329
+Accuracy: 86.59
+Precision: 0.3223
+Recall: 0.6524
+F1 Score: 0.4296
+
+Train Loss: 0.6818
+Validation Loss: 1.1549
+Accuracy: 89.09
+Precision: 0.3628
+Recall: 0.5457
+F1 Score: 0.4351
+
+Train Loss: 0.7029
+Validation Loss: 0.9171
+Accuracy: 83.38
+Precision: 0.2812
+Recall: 0.7277
+F1 Score: 0.4044
+
+Train Loss: 0.6908
+Validation Loss: 0.9143
+Accuracy: 78.39
+Precision: 0.2397
+Recall: 0.8122
+F1 Score: 0.3691
+
+Train Loss: 0.6905
+Validation Loss: 1.1771
+Accuracy: 89.83
+Precision: 0.3869
+Recall: 0.5357
+F1 Score: 0.4478
+
+Train Loss: 0.6921
+Validation Loss: 0.8974
+Accuracy: 80.08
+Precision: 0.2520
+Recall: 0.7953
+F1 Score: 0.3821
+
+Train Loss: 0.6786
+Validation Loss: 0.9846
+Accuracy: 84.21
+Precision: 0.2890
+Recall: 0.7035
+F1 Score: 0.4081
+
+Train Loss: 0.6737
+Validation Loss: 0.8210
+Accuracy: 73.11
+Precision: 0.2090
+Recall: 0.8858
+F1 Score: 0.3378
+
+Train Loss: 0.6777
+Validation Loss: 1.0146
+Accuracy: 86.62
+Precision: 0.3237
+Recall: 0.6608
+F1 Score: 0.4330
+
+Train Loss: 0.6645
+Validation Loss: 1.1886
+Accuracy: 88.71
+Precision: 0.3596
+Recall: 0.5829
+F1 Score: 0.4432
+
+Train Loss: 0.6633
+Validation Loss: 0.8655
+Accuracy: 79.74
+Precision: 0.2493
+Recall: 0.7966
+F1 Score: 0.3789
+
+Train Loss: 0.6871
+Validation Loss: 0.8548
+Accuracy: 78.99
+Precision: 0.2466
+Recall: 0.8091
+F1 Score: 0.3760
+
+Train Loss: 0.6712
+Validation Loss: 0.8183
+Accuracy: 80.01
+Precision: 0.2552
+Recall: 0.8213
+F1 Score: 0.3887
+
+Train Loss: 0.6640
+Validation Loss: 0.8823
+Accuracy: 82.36
+Precision: 0.2728
+Recall: 0.7656
+F1 Score: 0.4016
+
+Train Loss: 0.6619
+Validation Loss: 0.8929
+Accuracy: 84.55
+Precision: 0.2980
+Recall: 0.7343
+F1 Score: 0.4234
+
+Train Loss: 0.6598
+Validation Loss: 0.8065
+Accuracy: 77.80
+Precision: 0.2387
+Recall: 0.8521
+F1 Score: 0.3725
+
+Train Loss: 0.6471
+Validation Loss: 0.7975
+Accuracy: 72.09
+Precision: 0.2083
+Recall: 0.9214
+F1 Score: 0.3392
+
+Train Loss: 0.6459
+Validation Loss: 1.0205
+Accuracy: 88.06
+Precision: 0.3499
+Recall: 0.6209
+F1 Score: 0.4453
+
+Train Loss: 0.6441
+Validation Loss: 0.8460
+Accuracy: 78.74
+Precision: 0.2435
+Recall: 0.8233
+F1 Score: 0.3751
+
+Train Loss: 0.6338
+Validation Loss: 0.8329
+Accuracy: 82.31
+Precision: 0.2753
+Recall: 0.7852
+F1 Score: 0.4068
+
+Train Loss: 0.6368
+Validation Loss: 0.8023
+Accuracy: 69.56
+Precision: 0.1963
+Recall: 0.9427
+F1 Score: 0.3246
+
+Train Loss: 0.6363
+Validation Loss: 0.7845
+Accuracy: 78.04
+Precision: 0.2418
+Recall: 0.8572
+F1 Score: 0.3767
+
+Train Loss: 0.6152
+Validation Loss: 0.7653
+Accuracy: 79.57
+Precision: 0.2554
+Recall: 0.8567
+F1 Score: 0.3931
+
+Train Loss: 0.6023
+Validation Loss: 0.8112
+Accuracy: 82.52
+Precision: 0.2801
+Recall: 0.8037
+F1 Score: 0.4149
+
+Train Loss: 0.6001
+Validation Loss: 0.7902
+Accuracy: 81.74
+Precision: 0.2732
+Recall: 0.8205
+F1 Score: 0.4095
+
+Train Loss: 0.6009
+Validation Loss: 0.7982
+Accuracy: 82.41
+Precision: 0.2795
+Recall: 0.8089
+F1 Score: 0.4150
+
+Train Loss: 0.5936
+Validation Loss: 0.7515
+Accuracy: 78.29
+Precision: 0.2466
+Recall: 0.8779
+F1 Score: 0.3846
+
+Train Loss: 0.5921
+Validation Loss: 0.7690
+Accuracy: 80.31
+Precision: 0.2614
+Recall: 0.8478
+F1 Score: 0.3992
+
+Train Loss: 0.5842
+Validation Loss: 0.7545
+Accuracy: 79.52
+Precision: 0.2558
+Recall: 0.8630
+F1 Score: 0.3943
+
+Train Loss: 0.5832
+Validation Loss: 0.7650
+Accuracy: 80.11
+Precision: 0.2606
+Recall: 0.8528
+F1 Score: 0.3987
+
+Train Loss: 0.5875
+Validation Loss: 0.8188
+Accuracy: 82.86
+Precision: 0.2840
+Recall: 0.7990
+F1 Score: 0.4185
+
+Train Loss: 0.5821
+Validation Loss: 0.7704
+Accuracy: 80.34
+Precision: 0.2619
+Recall: 0.8486
+F1 Score: 0.3999
+
+Train Loss: 0.5783
+Validation Loss: 0.7737
+Accuracy: 80.70
+Precision: 0.2651
+Recall: 0.8442
+F1 Score: 0.4030
+
+Train Loss: 0.5827
+Validation Loss: 0.7595
+Accuracy: 73.52
+Precision: 0.2161
+Recall: 0.9247
+F1 Score: 0.3501
+
+Train Loss: 0.5822
+Validation Loss: 0.8261
+Accuracy: 83.70
+Precision: 0.2929
+Recall: 0.7863
+F1 Score: 0.4265
+
+Train Loss: 0.5803
+Validation Loss: 0.8479
+Accuracy: 84.79
+Precision: 0.3055
+Recall: 0.7629
+F1 Score: 0.4359
+
+Train Loss: 0.5752
+Validation Loss: 0.7930
+Accuracy: 82.09
+Precision: 0.2772
+Recall: 0.8210
+F1 Score: 0.4141
+
+Train Loss: 0.5778
+Validation Loss: 0.7704
+Accuracy: 81.01
+Precision: 0.2676
+Recall: 0.8404
+F1 Score: 0.4056
+
+Train Loss: 0.5747
+Validation Loss: 0.8074
+Accuracy: 83.09
+Precision: 0.2868
+Recall: 0.8013
+F1 Score: 0.4220
+
+Train Loss: 0.5751
+Validation Loss: 0.7443
+Accuracy: 75.75
+Precision: 0.2299
+Recall: 0.9092
+F1 Score: 0.3667
+
+Train Loss: 0.5730
+Validation Loss: 0.7532
+Accuracy: 78.47
+Precision: 0.2480
+Recall: 0.8782
+F1 Score: 0.3865
+
+Train Loss: 0.5704
+Validation Loss: 0.8122
+Accuracy: 83.63
+Precision: 0.2936
+Recall: 0.7949
+F1 Score: 0.4283
+
+Train Loss: 0.5644
+Validation Loss: 0.7528
+Accuracy: 76.90
+Precision: 0.2366
+Recall: 0.8943
+F1 Score: 0.3739
+
+Train Loss: 0.5727
+Validation Loss: 0.7699
+Accuracy: 81.53
+Precision: 0.2727
+Recall: 0.8357
+F1 Score: 0.4109
+
+Train Loss: 0.5644
+Validation Loss: 0.8676
+Accuracy: 85.31
+Precision: 0.3121
+Recall: 0.7522
+F1 Score: 0.4408
+
+Train Loss: 0.5671
+Validation Loss: 0.8096
+Accuracy: 83.49
+Precision: 0.2916
+Recall: 0.7979
+F1 Score: 0.4268
+
+Train Loss: 0.5636
+Validation Loss: 0.7750
+Accuracy: 81.40
+Precision: 0.2717
+Recall: 0.8362
+F1 Score: 0.4097
+
+Train Loss: 0.5622
+Validation Loss: 0.7710
+Accuracy: 81.21
+Precision: 0.2699
+Recall: 0.8402
+F1 Score: 0.4081
+
+Train Loss: 0.5625
+Validation Loss: 0.7672
+Accuracy: 81.48
+Precision: 0.2721
+Recall: 0.8356
+F1 Score: 0.4103
+
+Train Loss: 0.5614
+Validation Loss: 0.8215
+Accuracy: 83.07
+Precision: 0.2852
+Recall: 0.7888
+F1 Score: 0.4184
+
+Train Loss: 0.5631
+Validation Loss: 0.7612
+Accuracy: 81.93
+Precision: 0.2777
+Recall: 0.8348
+F1 Score: 0.4163
+
+Train Loss: 0.5563
+Validation Loss: 0.7202
+Accuracy: 78.15
+Precision: 0.2475
+Recall: 0.8959
+F1 Score: 0.3875
+
+Train Loss: 0.5590
+Validation Loss: 0.7454
+Accuracy: 78.30
+Precision: 0.2469
+Recall: 0.8794
+F1 Score: 0.3851
+
+Train Loss: 0.5602
+Validation Loss: 0.7664
+Accuracy: 81.42
+Precision: 0.2724
+Recall: 0.8436
+F1 Score: 0.4116
+
+Train Loss: 0.5575
+Validation Loss: 0.7937
+Accuracy: 83.09
+Precision: 0.2882
+Recall: 0.8098
+F1 Score: 0.4247
+
+Train Loss: 0.5531
+Validation Loss: 0.8222
+Accuracy: 84.04
+Precision: 0.2980
+Recall: 0.7886
+F1 Score: 0.4322
+
+Train Loss: 0.5538
+Validation Loss: 0.8690
+Accuracy: 85.27
+Precision: 0.3130
+Recall: 0.7574
+F1 Score: 0.4422
+

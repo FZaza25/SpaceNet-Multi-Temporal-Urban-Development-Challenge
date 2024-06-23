@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import rasterio
 
-file_path = 'sample5.tif'
+file_path = 'sample.tif'
 with rasterio.open(file_path) as source:
    dataset=source.read()
    
