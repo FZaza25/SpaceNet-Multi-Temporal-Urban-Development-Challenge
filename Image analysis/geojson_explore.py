@@ -4,7 +4,7 @@ import numpy as np
 from rasterio.features import rasterize
 import matplotlib.pyplot as plt
 
-# Carica i file GeoJSON contenenti le etichette
+
 labels_path = 'labels_global_monthly_2017_07_mosaic_L15-1615E-1205N_6460_3370_13_Buildings.geojson'
 labels_match_path = 'labels_match_global_monthly_2017_07_mosaic_L15-1615E-1205N_6460_3370_13_Buildings.geojson'
 labels_match_px_path = 'labels_match_px_global_monthly_2017_07_mosaic_L15-1615E-1205N_6460_3370_13_Buildings.geojson'
@@ -13,13 +13,13 @@ labels = gpd.read_file(labels_path)
 labels_match = gpd.read_file(labels_match_path)
 labels_match_px = gpd.read_file(labels_match_px_path)
 
-# Stampa il CRS di ciascuna label, per match_px non abbiamo un CRS geografico, in quanto sono
-# coordinate in unità pixel
+
+
 print(f'CRS di labels: {labels.crs}')
 print(f'CRS di labels_match: {labels_match.crs}')
 
 
-# Carica l'immagine satellitare in formato TIFF
+
 tif_image_path = 'global_monthly_2017_07_mosaic_L15-1615E-1205N_6460_3370_13.tif'
 
 with rasterio.open(tif_image_path) as src:
@@ -28,7 +28,7 @@ with rasterio.open(tif_image_path) as src:
     img_shape = (src.height, src.width)
     img_crs = src.crs
 
-# Stampa i bounds (limiti spaziali) delle geometrie e dell'immagine per verificare che le coordinate siano allineate
+
 print(f'Bounds delle geometrie (labels): {labels.total_bounds}')
 print(f'Bounds delle geometrie (labels_match): {labels_match.total_bounds}')
 print(f'Bounds delle geometrie (labels_match_px): {labels_match_px.total_bounds}')

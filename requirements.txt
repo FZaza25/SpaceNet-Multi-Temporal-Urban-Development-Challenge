@@ -1,0 +1,15 @@
+affine>=2.4.0
+albumentations>=1.4.10
+geopandas>=1.0.0
+matplotlib>=3.9.0
+numpy>=1.26.4
+opencv-python-headless>=4.10.0.84
+optuna>=3.6.1
+pandas>=2.2.2
+rasterio>=1.3.10
+scikit-learn>=1.5.0
+seaborn>=0.13.2
+shapely>=2.0.4
+torch>=2.3.1
+torchvision>=0.18.1
+tqdm>=4.66.4
